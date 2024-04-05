@@ -1,0 +1,239 @@
+body {
+  font-family: serif;
+  background-color: #3d3d3d;
+  max-width: 1500px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+header {
+  font-size: 3rem;
+  color: #2e2e2e;
+  background: linear-gradient(30deg, #6200ff, #ff00ff);
+  font-weight: bold;
+}
+
+.home {
+  text-align: center;
+  height: 70vh;
+  width: 100%;
+  padding: 60px 0;
+}
+.home h1 {
+  padding: 60px 0;
+  font-size: 4rem;
+  color: #fff;
+}
+.home p {
+  color: #fff;
+}
+
+span {
+  display: block;
+  border-top: 6px solid #d607ff;
+  margin-top: 70px;
+}
+
+.table-of-contents a {
+  color: #fff;
+  font-size: 1.2rem;
+  display: block;
+}
+
+#situation {
+  color: #fff;
+  font-size: 32px;
+  margin-top: 200px;
+  border-bottom: 4px solid #6624ff;
+}
+
+.container-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-a label {
+  width: 25%;
+}
+.container-a .card {
+  margin: 80px 15px;
+}
+.container-a .card .thumbnail {
+  background: linear-gradient(to bottom right, #6200ff, #9c07ff, #ff73ec);
+  text-align: center;
+  padding: 60px 0;
+  width: auto;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.container-a .card h3 {
+  background-color: #252525;
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4em;
+}
+.container-a .card .text {
+  background-color: #b9b9b9;
+  width: 250px;
+  margin-left: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+#motion {
+  color: #fff;
+  font-size: 32px;
+  margin-top: 200px;
+  border-bottom: 4px solid #077bff;
+}
+
+.container-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-b label {
+  width: 25%;
+}
+.container-b .card {
+  margin: 80px 15px;
+}
+.container-b .card .thumbnail {
+  background: linear-gradient(to bottom right, #0059ff, #07b0ff, #73ffb9);
+  text-align: center;
+  padding: 60px 0;
+  width: auto;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.container-b .card h3 {
+  background-color: #252525;
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4em;
+}
+.container-b .card .text {
+  background-color: #b9b9b9;
+  width: 250px;
+  margin-left: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+#emotion {
+  color: #fff;
+  font-size: 32px;
+  margin-top: 200px;
+  border-bottom: 4px solid #ff3b21;
+}
+
+.container-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-c label {
+  width: 25%;
+}
+.container-c .card {
+  margin: 80px 15px;
+}
+.container-c .card .thumbnail {
+  background: linear-gradient(to bottom right, #ff3030, #ff9b3e, #fffb2b);
+  text-align: center;
+  padding: 60px 0;
+  width: auto;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.container-c .card h3 {
+  background-color: #252525;
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4em;
+}
+.container-c .card .text {
+  background-color: #b9b9b9;
+  width: 250px;
+  margin-left: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+#degree {
+  color: #fff;
+  font-size: 32px;
+  margin-top: 200px;
+  border-bottom: 4px solid #73ffb9;
+}
+
+.container-d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-d label {
+  width: 25%;
+}
+.container-d .card {
+  margin: 80px 15px;
+}
+.container-d .card .thumbnail {
+  background: linear-gradient(to bottom right, #0f8bff, #18f0ff, #fffb09);
+  text-align: center;
+  padding: 60px 0;
+  width: auto;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.container-d .card h3 {
+  background-color: #252525;
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4em;
+}
+.container-d .card .text {
+  background-color: #b9b9b9;
+  width: 250px;
+  margin-left: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+footer {
+  padding-bottom: 300px;
+  background-color: #98f0ff;
+  margin-top: 300px;
+}
+footer h3 {
+  color: #fff;
+}/*# sourceMappingURL=home.css.map */
