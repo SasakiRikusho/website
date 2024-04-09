@@ -20,13 +20,16 @@ header {
   width: 100%;
   padding: 60px 0;
 }
-.home h1 {
+.home h2 {
   padding: 60px 0;
   font-size: 4rem;
   color: #fff;
 }
-.home p {
+
+.introduction {
+  margin-top: 50px;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 span {
@@ -35,10 +38,23 @@ span {
   margin-top: 70px;
 }
 
+.table-of-contents {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.table-of-contents h2 {
+  font-size: 2rem;
+  color: #fff;
+}
 .table-of-contents a {
   color: #fff;
   font-size: 1.2rem;
   display: block;
+  margin-left: 50px;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration-line: underline;
 }
 
 #situation {
@@ -227,6 +243,12 @@ span {
   text-align: center;
   color: #fff;
   margin-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  filter: brightness(125%);
+  transition: 0.5s ease;
 }
 
 footer {

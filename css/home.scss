@@ -58,14 +58,16 @@ header {
     height: 70vh; 
     width: 100%;
     padding: 60px 0;
-    h1 {
+    h2 {
         padding: 60px 0;
         font-size: 4rem;
         color: #fff;
     }
-    p {
-        color: #fff;
-    }
+}
+.introduction {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1.5rem;
 }
 span {
     display: block;
@@ -74,10 +76,20 @@ span {
 }
 .table-of-contents {
     // width: 90%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font-size: 2rem;
+        color: #fff;
+    }
     a {
         color: #fff;
         font-size: 1.2rem;
         display: block;
+        margin-left: 50px;
+        width: max-content;
+        text-decoration-line: underline;
     }
 }
 #situation {
@@ -163,6 +175,11 @@ span {
             @include contents;
         }
     }   
+}
+.card:hover {
+    transform: scale(1.05);
+    filter: brightness(125%);
+    transition: .5s ease;
 }
 footer {
     padding-bottom: 300px;

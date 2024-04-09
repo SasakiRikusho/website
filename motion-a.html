@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/motion.css">
+    <title>motion-a</title>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">動作</h1>
+        <!-- 漢字をクリックで読み、意味を表示します -->
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="mass">あ</h2>
+                <h3>集まる・集める</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>会う</h3>
+                <h3>侮る</h3>
+                <h3>扱う</h3>
+                <h3>与える</h3>
+                <h3>改める</h3>
+                <h3>暴く</h3>
+                <h3>争う</h3>
+                <h3>洗う</h3>
+                <h3>上げる・掲げる</h3>
+                <h3>慌てる（急ぐ・忙しい）</h3>
+            <h2 class="mass">い</h2>
+                <h3>移動</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>諫める・戒める</h3>
+                <h3>飲食</h3>
+                <h3>いたわる</h3>
+                <h3>痛めつける</h3>
+                <h3>挑む</h3>
+                <h3>至る</h3>
+                <h3>偽る</h3>
+            <h2 class="mass">う</h2>
+                <h3>奪う（盗む）</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>うろつく</h3>
+                <h3>受ける（賜る）</h3>
+                <h3>訴える</h3>
+                <h3>うかがう</h3>
+            <h2 class="mass">え</h2>
+                <h3>得る</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+            <h2 class="mass">お</h2>
+                <h3>覆う</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>おさえる</h3>
+                <h3>修める</h3>
+                <h3>教える（導く）</h3>
+                <h3>負う</h3>
+                <h3>脅す</h3>
+                <h3>犯す</h3>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        (() => {
+
+class Accordion {
+    constructor(obj) {
+const $elements = document.querySelectorAll(obj.hookName);
+
+$elements.forEach($elm => {
+    const $trigger = $elm.querySelectorAll(obj.tagName);
+    const triggerLength = $trigger.length;
+    let index = 0;
+
+    while(index < triggerLength) {
+        $trigger[index].addEventListener('click', (e) => this.clickHandler(e));
+        index++;
+    }
+});
+
+
+    }
+    //clickHandlerの中身
+clickHandler(e) {
+    //デフォルトを防ぐ
+    e.preventDefault();
+
+    //クリックした箇所の情報を取得してきて代入
+    const $target = e.currentTarget;
+    //クリックした箇所の次の要素を取得してきて代入
+    const $content = $target.nextElementSibling;
+
+    if($content.style.display === 'block'){
+        $content.style.display = 'none'; 
+    }else{
+        $content.style.display = 'block';
+    }
+
+};
+}
+
+const Appear = new Accordion({
+    hookName: '.word',
+    tagName: 'a'
+});
+
+})();
+        
+    </script>
+
+</body>
+</html>

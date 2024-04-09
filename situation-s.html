@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/situation.css">
+    <title>situation-s</title>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">状態</h1>
+        <!-- 漢字をクリックで読み、意味を表示します -->
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="mass">さ</h2>
+                <h3>寒い（冷たい）</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a>凛冽</a>
+                        <p class="explanation"><span>りんれつ</span> 寒気がきびしいさま。  態度・性格などが厳格なさま。</p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>盛ん</h3>
+                <h3>さっぱりした</h3>
+                <h3>覚める</h3>
+                <h3>栄える</h3>
+                <h3>さまざま</h3>
+            <h2 class="mass">し</h2>
+                <h3>静か</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>沈む</h3>
+                <h3>死ぬ</h3>
+                <h3>重要</h3>
+                <h3>親しい</h3>
+                <h3>茂る</h3>
+                <h3>しなやか</h3>
+                <h3>占める</h3>
+                <h3>失礼</h3>
+                <h3>白い</h3>
+            <h2 class="mass">す</h2>
+                <h3>鋭い</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>澄む（清らか）</h3>
+                <h3>廃れる</h3>
+            <h2 class="mass">せ</h2>
+                <h3>性格（性質）</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+            <h2 class="mass">そ</h2>
+                <h3>束縛</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>素朴（まじめ）</h3>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        (() => {
+
+class Accordion {
+    constructor(obj) {
+const $elements = document.querySelectorAll(obj.hookName);
+
+$elements.forEach($elm => {
+    const $trigger = $elm.querySelectorAll(obj.tagName);
+    const triggerLength = $trigger.length;
+    let index = 0;
+
+    while(index < triggerLength) {
+        $trigger[index].addEventListener('click', (e) => this.clickHandler(e));
+        index++;
+    }
+});
+
+
+    }
+    //clickHandlerの中身
+clickHandler(e) {
+    //デフォルトを防ぐ
+    e.preventDefault();
+
+    //クリックした箇所の情報を取得してきて代入
+    const $target = e.currentTarget;
+    //クリックした箇所の次の要素を取得してきて代入
+    const $content = $target.nextElementSibling;
+
+    if($content.style.display === 'block'){
+        $content.style.display = 'none'; 
+    }else{
+        $content.style.display = 'block';
+    }
+
+};
+}
+
+const Appear = new Accordion({
+    hookName: '.word',
+    tagName: 'a'
+});
+
+})();
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/motion.css">
+    <title>motion-n</title>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">動作</h1>
+        <!-- 漢字をクリックで読み、意味を表示します -->
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="mass">な</h2>
+                <h3>泣く</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>眺める</h3>
+            <h2 class="mass">ぬ</h2>
+                <h3>縫う</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>抜く</h3>
+            <h2 class="mass">ね</h2>
+                <h3>願う</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>狙う</h3>
+                <h3>寝る</h3>
+            <h2 class="mass">の</h2>
+                <h3>述べる（言う）</h3>
+                <ul class="words">
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </li>
+                    <li class="word">
+                        <a></a>
+                        <p class="explanation"><span></span><br></p>
+                    </il>
+                </ul>
+                <h3>逃れる</h3>
+                <h3>除く</h3>
+                <h3>呪う</h3>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        (() => {
+
+class Accordion {
+    constructor(obj) {
+const $elements = document.querySelectorAll(obj.hookName);
+
+$elements.forEach($elm => {
+    const $trigger = $elm.querySelectorAll(obj.tagName);
+    const triggerLength = $trigger.length;
+    let index = 0;
+
+    while(index < triggerLength) {
+        $trigger[index].addEventListener('click', (e) => this.clickHandler(e));
+        index++;
+    }
+});
+
+
+    }
+    //clickHandlerの中身
+clickHandler(e) {
+    //デフォルトを防ぐ
+    e.preventDefault();
+
+    //クリックした箇所の情報を取得してきて代入
+    const $target = e.currentTarget;
+    //クリックした箇所の次の要素を取得してきて代入
+    const $content = $target.nextElementSibling;
+
+    if($content.style.display === 'block'){
+        $content.style.display = 'none'; 
+    }else{
+        $content.style.display = 'block';
+    }
+
+};
+}
+
+const Appear = new Accordion({
+    hookName: '.word',
+    tagName: 'a'
+});
+
+})();
+        
+    </script>
+
+</body>
+</html>
