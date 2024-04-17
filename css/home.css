@@ -39,18 +39,16 @@ span {
 }
 
 .table-of-contents {
-  margin-top: 120px;
-  display: flex;
+  margin-top: 80px;
   flex-direction: column;
 }
 .table-of-contents h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
 }
 .table-of-contents a {
   color: #fff;
-  font-size: 1.2rem;
-  display: block;
+  font-size: 1.4rem;
   margin-left: 50px;
   width: -moz-max-content;
   width: max-content;
@@ -59,7 +57,7 @@ span {
 
 #situation {
   color: #fff;
-  font-size: 32px;
+  font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #6624ff;
 }
@@ -86,14 +84,6 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
-.container-a .card h3 {
-  background-color: #252525;
-  margin-top: 30px;
-  height: 45px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.4em;
-}
 .container-a .card .text {
   background-color: #b9b9b9;
   width: 250px;
@@ -106,7 +96,7 @@ span {
 
 #motion {
   color: #fff;
-  font-size: 32px;
+  font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #077bff;
 }
@@ -133,14 +123,6 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
-.container-b .card h3 {
-  background-color: #252525;
-  margin-top: 30px;
-  height: 45px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.4em;
-}
 .container-b .card .text {
   background-color: #b9b9b9;
   width: 250px;
@@ -153,7 +135,7 @@ span {
 
 #emotion {
   color: #fff;
-  font-size: 32px;
+  font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #ff3b21;
 }
@@ -180,14 +162,6 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
-.container-c .card h3 {
-  background-color: #252525;
-  margin-top: 30px;
-  height: 45px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.4em;
-}
 .container-c .card .text {
   background-color: #b9b9b9;
   width: 250px;
@@ -200,7 +174,7 @@ span {
 
 #degree {
   color: #fff;
-  font-size: 32px;
+  font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #73ffb9;
 }
@@ -227,14 +201,6 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
-.container-d .card h3 {
-  background-color: #252525;
-  margin-top: 30px;
-  height: 45px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.4em;
-}
 .container-d .card .text {
   background-color: #b9b9b9;
   width: 250px;
@@ -252,10 +218,12 @@ span {
 }
 
 footer {
-  padding-bottom: 300px;
-  background-color: #98f0ff;
-  margin-top: 300px;
+  padding-bottom: 30px;
+  background-color: #00ffff;
+  margin-top: 100px;
 }
-footer h3 {
-  color: #fff;
+footer a {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=home.css.map */

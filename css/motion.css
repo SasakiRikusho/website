@@ -23,6 +23,17 @@ header h1::after {
     font-size: 2rem;
     margin-left: 25px;
 }
+.table-of-contents {
+    width: 75%;
+    margin: 0 auto;
+    background: #435c8b;
+}
+.table-of-contents a {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
 .container {
     margin: 0 auto;
     width: 75%;
@@ -80,4 +91,10 @@ header h1::after {
 }
 .word span {
     border-bottom: 1px solid #000;
+}
+footer {
+    margin: 30px auto;
+    height: 50px;
+    width: 75%;
+    background-color: #00ccff;
 }

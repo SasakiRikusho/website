@@ -8,14 +8,6 @@
     font-size: 3.5em;
     font-weight: bold;
 }
-@mixin version {
-    background-color: #252525;
-    margin-top: 30px;
-    height: 45px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1.4em;
-}
 @mixin contents {
     background-color: #b9b9b9;
     width: 250px;
@@ -27,7 +19,7 @@
 }
 @mixin section-header($color) {
     color: #fff;
-    font-size: 32px;
+    font-size: 3rem;
     margin-top: 200px;
     border-bottom: 4px solid $color;
 }
@@ -76,17 +68,15 @@ span {
 }
 .table-of-contents {
     // width: 90%;
-    margin-top: 120px;
-    display: flex;
+    margin-top: 80px;
     flex-direction: column;
     h2 {
-        font-size: 2rem;
+        font-size: 3rem;
         color: #fff;
     }
     a {
         color: #fff;
-        font-size: 1.2rem;
-        display: block;
+        font-size: 1.4rem;
         margin-left: 50px;
         width: max-content;
         text-decoration-line: underline;
@@ -104,9 +94,6 @@ span {
         margin: 80px 15px;
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #6200ff, #9c07ff, #ff73ec));
-        }
-        h3 {
-            @include version;
         }
         .text {
             @include contents;
@@ -126,9 +113,6 @@ span {
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #0059ff, #07b0ff, #73ffb9));
         }
-        h3 {
-            @include version;
-        }
         .text {
             @include contents;
         }
@@ -146,9 +130,6 @@ span {
         margin: 80px 15px;
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #ff3030, #ff9b3e, #fffb2b));
-        }
-        h3 {
-            @include version;
         }
         .text {
             @include contents;
@@ -168,9 +149,6 @@ span {
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #0f8bff, #18f0ff, #fffb09));
         }
-        h3 {
-            @include version;
-        }
         .text {
             @include contents;
         }
@@ -182,10 +160,12 @@ span {
     transition: .5s ease;
 }
 footer {
-    padding-bottom: 300px;
-    background-color: #98f0ff;
-    margin-top: 300px;
-    h3{
-        color: #fff;
+    padding-bottom: 30px;
+    background-color: #00ffff;
+    margin-top: 100px;
+    a{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
     }
 }
