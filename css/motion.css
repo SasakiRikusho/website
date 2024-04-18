@@ -10,12 +10,22 @@ header {
     width: 75%;
     margin: 0 auto;
 }
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+    }
+}
 header h1{
     color: #fff;
     font-size: 5rem;
     font-weight: bold;
     margin: 50px 0 70px 0;
-    border-bottom: 4px solid #2469ff;
+    border-bottom: 4px solid #247cff;
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
 }
 header h1::after {
     content: "を表す言葉一覧";
@@ -23,10 +33,20 @@ header h1::after {
     font-size: 2rem;
     margin-left: 25px;
 }
+@media (max-width: 480px) {
+    header h1::after {
+        font-size: 1rem;
+    }
+}
 .table-of-contents {
     width: 75%;
     margin: 0 auto;
-    background: #435c8b;
+    background: #426da7;
+}
+@media (max-width: 480px){
+    .table-of-contents {
+        width: 100%;
+    }
 }
 .table-of-contents a {
     text-decoration: underline;
@@ -34,29 +54,56 @@ header h1::after {
     font-size: 1.2rem;
     margin-right: 5px;
 }
+@media (max-width: 480px) {
+    .table-of-contents a {
+        font-size: 1rem;
+    }
+}
 .container {
     margin: 0 auto;
     width: 75%;
     border-radius: 4px;
-    box-shadow: 8px 7px 5px #4282cc;
-    /* display: flex;
-    flex-wrap: wrap; */
+    box-shadow: 8px 7px 5px #4289cc;
+}
+@media (max-width: 480px){
+    .container {
+        width: 100%;
+    }
 }
 .container .mass {
     color: #fff;
     font-size: 4rem;
     margin: 20px 0 20px 40px;
 }
+@media (max-width: 480px){
+    .container .mass{
+        font-size: 3rem;
+        margin: 25px 0;
+        line-height: 15px;
+    }
+}
 .container .mass::after {
     content: "漢字をクリックすると、読み・意味が表示されます。";
     font-size: 24px;
     margin-left: 40px;
 }
+@media (max-width: 480px){
+    .container .mass::after {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
 .container h3 {
     color: #fff;
     font-size: 3rem;
     margin: 10px 0 10px 70px;
-    border-bottom: 3px solid #006eff;
+    border-bottom: 3px solid #38afff;
+}
+@media (max-width: 480px){
+    .container h3 {
+        margin-left: auto;
+        font-size: 2rem;
+    }
 }
 .words {
     display: flex;
@@ -64,6 +111,11 @@ header h1::after {
 }
 .word {
     width: 25%;
+}
+@media (max-width: 480px){
+    .word {
+        width: 50%;
+    }
 }
 .word a {
     display: block;
@@ -77,6 +129,13 @@ header h1::after {
     font-size: 2em;
     font-weight: bold;
 }
+@media (max-width: 480px){
+    .word a{
+        padding: 0px;
+        font-size: 1.6em;
+        margin: 5px;
+    }
+}
 .word a:hover {
     filter: brightness(115%);
     transition: .3s ease;
@@ -85,9 +144,14 @@ header h1::after {
     width: auto;
     margin: 0 10px;
     border-radius: 5px;
-    background: #a8c4ff;
+    background: #cfe0ff;
     font-size: 24px;
     display: none;
+}
+@media (max-width: 480px){
+    .word .explanation {
+        font-size: 14px;
+    }
 }
 .word span {
     border-bottom: 1px solid #000;
@@ -97,4 +161,9 @@ footer {
     height: 50px;
     width: 75%;
     background-color: #00ccff;
+}
+@media (max-width: 480px){
+    footer {
+        width: 100%;
+    }
 }

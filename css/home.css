@@ -13,10 +13,14 @@ header {
   background: linear-gradient(30deg, #6200ff, #ff00ff);
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5rem;
+  }
+}
 
 .home {
   text-align: center;
-  height: 70vh;
   width: 100%;
   padding: 60px 0;
 }
@@ -25,11 +29,21 @@ header {
   font-size: 4rem;
   color: #fff;
 }
+@media (max-width: 480px) {
+  .home h2 {
+    font-size: 2rem;
+  }
+}
 
 .introduction {
   margin-top: 50px;
   color: #fff;
   font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  .introduction {
+    font-size: 1rem;
+  }
 }
 
 span {
@@ -46,6 +60,11 @@ span {
   font-size: 3rem;
   color: #fff;
 }
+@media (max-width: 480px) {
+  .table-of-contents h2 {
+    font-size: 2rem;
+  }
+}
 .table-of-contents a {
   color: #fff;
   font-size: 1.4rem;
@@ -54,12 +73,23 @@ span {
   width: max-content;
   text-decoration-line: underline;
 }
+@media (max-width: 480px) {
+  .table-of-contents a {
+    margin-left: 20px;
+  }
+}
 
 #situation {
   color: #fff;
   font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #6624ff;
+}
+@media (max-width: 480px) {
+  #situation {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
 }
 
 .container-a {
@@ -71,8 +101,23 @@ span {
 .container-a label {
   width: 25%;
 }
+@media (max-width: 1200px) {
+  .container-a label {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .container-a label {
+    width: 100%;
+  }
+}
 .container-a .card {
   margin: 80px 15px;
+}
+@media (max-width: 480px) {
+  .container-a .card {
+    margin: 20px 10px;
+  }
 }
 .container-a .card .thumbnail {
   background: linear-gradient(to bottom right, #6200ff, #9c07ff, #ff73ec);
@@ -84,14 +129,18 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .container-a .card .thumbnail {
+    padding: 0px;
+  }
+}
 .container-a .card .text {
   background-color: #b9b9b9;
-  width: 250px;
-  margin-left: 50px;
+  width: auto;
+  margin: 20px;
   border-radius: 5px;
   text-align: center;
   color: #fff;
-  margin-top: 10px;
 }
 
 #motion {
@@ -99,6 +148,12 @@ span {
   font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #077bff;
+}
+@media (max-width: 480px) {
+  #motion {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
 }
 
 .container-b {
@@ -110,8 +165,23 @@ span {
 .container-b label {
   width: 25%;
 }
+@media (max-width: 1200px) {
+  .container-b label {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .container-b label {
+    width: 100%;
+  }
+}
 .container-b .card {
   margin: 80px 15px;
+}
+@media (max-width: 480px) {
+  .container-b .card {
+    margin: 20px 10px;
+  }
 }
 .container-b .card .thumbnail {
   background: linear-gradient(to bottom right, #0059ff, #07b0ff, #73ffb9);
@@ -123,14 +193,18 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .container-b .card .thumbnail {
+    padding: 0px;
+  }
+}
 .container-b .card .text {
   background-color: #b9b9b9;
-  width: 250px;
-  margin-left: 50px;
+  width: auto;
+  margin: 20px;
   border-radius: 5px;
   text-align: center;
   color: #fff;
-  margin-top: 10px;
 }
 
 #emotion {
@@ -138,6 +212,12 @@ span {
   font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #ff3b21;
+}
+@media (max-width: 480px) {
+  #emotion {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
 }
 
 .container-c {
@@ -149,8 +229,23 @@ span {
 .container-c label {
   width: 25%;
 }
+@media (max-width: 1200px) {
+  .container-c label {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .container-c label {
+    width: 100%;
+  }
+}
 .container-c .card {
   margin: 80px 15px;
+}
+@media (max-width: 480px) {
+  .container-c .card {
+    margin: 20px 10px;
+  }
 }
 .container-c .card .thumbnail {
   background: linear-gradient(to bottom right, #ff3030, #ff9b3e, #fffb2b);
@@ -162,14 +257,18 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .container-c .card .thumbnail {
+    padding: 0px;
+  }
+}
 .container-c .card .text {
   background-color: #b9b9b9;
-  width: 250px;
-  margin-left: 50px;
+  width: auto;
+  margin: 20px;
   border-radius: 5px;
   text-align: center;
   color: #fff;
-  margin-top: 10px;
 }
 
 #degree {
@@ -177,6 +276,12 @@ span {
   font-size: 3rem;
   margin-top: 200px;
   border-bottom: 4px solid #73ffb9;
+}
+@media (max-width: 480px) {
+  #degree {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
 }
 
 .container-d {
@@ -188,8 +293,23 @@ span {
 .container-d label {
   width: 25%;
 }
+@media (max-width: 1200px) {
+  .container-d label {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .container-d label {
+    width: 100%;
+  }
+}
 .container-d .card {
   margin: 80px 15px;
+}
+@media (max-width: 480px) {
+  .container-d .card {
+    margin: 20px 10px;
+  }
 }
 .container-d .card .thumbnail {
   background: linear-gradient(to bottom right, #0f8bff, #18f0ff, #fffb09);
@@ -201,14 +321,18 @@ span {
   font-size: 3.5em;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .container-d .card .thumbnail {
+    padding: 0px;
+  }
+}
 .container-d .card .text {
   background-color: #b9b9b9;
-  width: 250px;
-  margin-left: 50px;
+  width: auto;
+  margin: 20px;
   border-radius: 5px;
   text-align: center;
   color: #fff;
-  margin-top: 10px;
 }
 
 .card:hover {

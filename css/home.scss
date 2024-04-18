@@ -10,12 +10,11 @@
 }
 @mixin contents {
     background-color: #b9b9b9;
-    width: 250px;
-    margin-left: 50px;
+    width: auto;
+    margin: 20px;
     border-radius: 5px;
     text-align: center;
     color: #fff;
-    margin-top: 10px;
 }
 @mixin section-header($color) {
     color: #fff;
@@ -30,6 +29,16 @@
     flex-wrap: wrap;
 }
 
+$sm: 480px;
+$lg: 1200px;
+
+@mixin mq($bp) {
+    @media (max-width: ($bp)) {
+        @content;
+    }
+}
+
+
 body {
     font-family: serif;
     background-color: #3d3d3d;
@@ -43,23 +52,30 @@ header {
     color: #2e2e2e;
     background: linear-gradient(30deg, #6200ff, #ff00ff);
     font-weight: bold;
-    // width: 90%;
+    @include mq($sm) {
+        font-size: 1.5rem;
+    }
 }
 .home {
     text-align: center;
-    height: 70vh; 
     width: 100%;
     padding: 60px 0;
     h2 {
         padding: 60px 0;
         font-size: 4rem;
         color: #fff;
+        @include mq($sm) {
+            font-size: 2rem;
+        }
     }
 }
 .introduction {
     margin-top: 50px;
     color: #fff;
     font-size: 1.5rem;
+    @include mq($sm) {
+        font-size: 1rem;
+    }
 }
 span {
     display: block;
@@ -67,12 +83,14 @@ span {
     margin-top: 70px;
 }
 .table-of-contents {
-    // width: 90%;
     margin-top: 80px;
     flex-direction: column;
     h2 {
         font-size: 3rem;
         color: #fff;
+        @include mq($sm) {
+            font-size: 2rem;
+        }
     }
     a {
         color: #fff;
@@ -80,20 +98,39 @@ span {
         margin-left: 50px;
         width: max-content;
         text-decoration-line: underline;
+        @include mq($sm) {
+            margin-left: 20px;
+        }
     }
 }
 #situation {
     @include section-header(#6624ff);
+    @include mq($sm) {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
 }
 .container-a {
     @include contain;
     label {
         width: 25%;
+        @include mq($lg) {
+            width: 50%;       
+           }
+        @include mq($sm) {
+         width: 100%;       
+        }
     }
     .card{
         margin: 80px 15px;
+        @include mq($sm) {
+            margin: 20px 10px;
+        }
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #6200ff, #9c07ff, #ff73ec));
+            @include mq($sm) {
+                padding: 0px;
+            }
         }
         .text {
             @include contents;
@@ -102,16 +139,32 @@ span {
 }
 #motion {
     @include section-header(#077bff);
+    @include mq($sm) {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
 }
 .container-b {
     @include contain;
     label {
         width: 25%;
+        @include mq($lg) {
+            width: 50%;       
+           }
+        @include mq($sm) {
+            width: 100%;
+        }
     }
     .card{
         margin: 80px 15px;
+        @include mq($sm) {
+            margin: 20px 10px;
+        }
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #0059ff, #07b0ff, #73ffb9));
+            @include mq($sm) {
+                padding: 0px;
+            }
         }
         .text {
             @include contents;
@@ -120,16 +173,32 @@ span {
 }
 #emotion {
     @include section-header(#ff3b21);
+    @include mq($sm) {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
 }
 .container-c{
     @include contain;
     label {
         width: 25%;
+        @include mq($lg) {
+            width: 50%;       
+           }
+        @include mq($sm) {
+            width: 100%;
+        }
     }
     .card{
         margin: 80px 15px;
+        @include mq($sm) {
+            margin: 20px 10px;
+        }
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #ff3030, #ff9b3e, #fffb2b));
+            @include mq($sm) {
+                padding: 0px;
+            }
         }
         .text {
             @include contents;
@@ -138,16 +207,32 @@ span {
 }
 #degree {
     @include section-header(#73ffb9);
+    @include mq($sm) {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
 }
 .container-d{
     @include contain;
     label {
         width: 25%;
+        @include mq($lg) {
+            width: 50%;       
+           }
+        @include mq($sm) {
+            width: 100%;
+        }
     }
     .card{
         margin: 80px 15px;
+        @include mq($sm) {
+            margin: 20px 10px;
+        }
         .thumbnail {
             @include thumbnail(linear-gradient(to bottom right, #0f8bff, #18f0ff, #fffb09));
+            @include mq($sm) {
+                padding: 0px;
+            }
         }
         .text {
             @include contents;
